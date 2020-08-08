@@ -1,0 +1,104 @@
+#header {
+  min-height: 110px;
+  .top-header {
+    position: relative;
+    height: 66px;
+    color: #fff;
+    z-index: 110;
+    background: #fff;
+    .container {
+      .logo {
+        img {
+          max-height: 40px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .w1040.w-full {
+      width: 1120px;
+    }
+  }
+  .navbar-wrapper {
+    position: relative;
+    height: 40px;
+    z-index: 100
+  }
+  .navbar {
+    background: #a70e1a;
+    position: relative;
+    .container {
+      height: 40px;
+      ul {
+        display: inline-block;
+        list-style: none;
+        li {
+          display: inline-block;
+          float: left;
+          cursor: pointer;
+          &:first-child {
+            a {
+              padding: 0;
+            }
+          }
+        }
+        li > a {
+          font-size: 15px;
+          color: #fff;
+          padding: 0 8px;
+          display: block;
+          text-decoration: none;
+          line-height: 40px;
+          position: relative;
+          font-family: SFD-Medium, Arial, Helvetica, sans-serif;
+          .span-icon-home {
+            display: block;
+            padding: 14px 8px;
+          }
+        }
+        li.active > a {
+          background: #980d17;
+        }
+        li:hover > a {
+          background: #980d17;
+        }
+      }
+      .toolbar-search {
+        position: relative;
+        display: inline-block;
+
+        .search-area {
+          position: absolute;
+          right: 0;
+          display: inline-block;
+          padding-top: 6px;
+          border-radius: 2px;
+
+          input {
+            padding: 7px 30px 7px 15px;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            min-width: 200px;
+            width: 100%;
+          }
+        }
+
+        .search-icon {
+          position: absolute;
+          right: 5px;
+          top: 12px;
+        }
+      }
+    }
+    .w1040.w-full {
+      width: 1120px;
+    }
+    &.fixed {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+}
